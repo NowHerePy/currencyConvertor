@@ -1,7 +1,6 @@
 import requests
 from bs4 import BeautifulSoup
 import html5lib
-from lxml import html
 
 curr_source = requests.get("https://www.easymarkets.com/int/learn-centre/discover-trading/currency-acronyms-and-abbreviations/")
 curr_soup = BeautifulSoup(curr_source.content,'html5lib')
